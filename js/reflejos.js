@@ -26,7 +26,26 @@ let paneles = document.querySelectorAll(".paneles p");
     }
 }
 
+/**
+ * Al comenzar el juego oculta el tutorial
+ */
+function ocultarTutorial(){
+    let tutorial = document.querySelector(".explicacion");
+    while (tutorial.firstChild){
+        tutorial.removeChild(tutorial.firstChild);
+    }
+    
+}
+
+function mostrarPaneles(){
+    paneles.forEach(panel => {
+        panel.style.display = "inline";
+    })
+}
+
 function comenzarJuego (){
+    mostrarPaneles();
+    ocultarTutorial();
     eliminarBoton();
     cambiarPaneles();
     
