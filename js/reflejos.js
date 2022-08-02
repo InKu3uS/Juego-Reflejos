@@ -56,16 +56,19 @@ function cambiarPaneles(){
     setTimeout(cambiarPaneles,2000);
 }
 
-/*Si clicamos en el botón del sol, borrarémos la clase css dark-mode del div 
-con id page y se aplicará el estilo active al sol*/
+/**
+ * Al clickar en el boton con el sol se carga la hoja de estilos del modo claro y se desactiva el boton de la luna
+ */
 document.getElementById('id-sun').onclick = function(){
     document.getElementById('id-moon').classList.remove('active');
     document.getElementById('estilos').href = "styles/style.css";
     this.classList.add('active');
   }
-  /*Si clicamos en el botón de la luna, añadiremos la clase css dark-mode del div 
-  con id page y se aplicará el estilo active a la luna*/
-  document.getElementById('id-moon').onclick = function(){
+
+/**
+ * Al clickar en el boton con la luna se carga la hoja de estilos del modo oscuro y se desactiva el boton del sol
+ */  
+document.getElementById('id-moon').onclick = function(){
     document.getElementById('id-sun').classList.remove('active');
     document.getElementById('estilos').href = "styles/style 2.css";
     this.classList.add('active')
