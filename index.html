@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link id= "estilos" rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <title>Juego de Reflejos</title>
+  </head>
+  <body>
+    <h1>Juego de Reflejos</h1>
+    <div class="container">
+      <div class="container-btn-mode">
+        <div id="id-sun" class="btn-mode sun active">
+           <i class="fas fa-sun"></i>
+        </div>
+        <div id="id-moon" class="btn-mode moon">
+           <i class="fas fa-moon"></i>
+        </div>
+     </div>
+      <div class="iniciar">
+        <h3>Introduce el tiempo de juego en minutos</h3>
+        <input type="number" name="tiempo" id="tiempo" min="1" />
+        <button id="comenzar">Comenzar</button>
+      </div>
+      <div class="tiempoRestante">
+        <p id="tiempoTotal"></p>
+        <p id="horasRestante"></p>
+        <p id="minutosRestante"></p>
+        <p id="segundosRestante"></p>
+      </div>
+      <div class="contador">
+        <p id="cuenta"></p>
+      </div>
+      <div class="paneles">
+        <p id="panel_1"></p>
+        <p id="panel_2"></p>
+        <p id="panel_3"></p>
+        <p id="panel_4"></p>
+        <p id="panel_5"></p>
+        <p id="panel_6"></p>
+      </div>
+    </div>
+    <script src="js/reflejos.js"></script>
+  </body>
+</html>
