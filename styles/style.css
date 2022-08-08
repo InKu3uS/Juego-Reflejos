@@ -1,86 +1,84 @@
-body{
-    text-align: center;
+body {
+  text-align: center;
 }
 
-.paneles{
-   display: flex;
-   justify-content: space-around;
-   flex-wrap: wrap;
-   padding: 20px;
- 
+.paneles {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
 }
 
-.paneles>p{
-    
-    border: 1px solid black;
-    border-width: inherit;
-    border-radius: 30px;
-    padding: 60px;
-    width: 15%;
-    font-weight: bolder;
-    font-size: large;
+.paneles > p {
+  border: 1px solid black;
+  border-width: inherit;
+  border-radius: 30px;
+  padding: 60px;
+  width: 15%;
+  font-weight: bolder;
+  font-size: large;
 }
 
-.Rojo{
-    background-color: red;
+.Rojo {
+  background-color: red;
 }
 
-.Verde{
-    background-color: green;
+.Verde {
+  background-color: green;
 }
-.Negro{
-    background-color: black;
-    color: white;
-}
-
-.Naranja{
-    background-color: orange;
+.Negro {
+  background-color: black;
+  color: white;
 }
 
-.Azul{
-    background-color: blue;
-    color: white;
+.Naranja {
+  background-color: orange;
 }
 
-.Amarillo{
-    background-color: yellow;
+.Azul {
+  background-color: blue;
+  color: white;
+}
+
+.Amarillo {
+  background-color: yellow;
 }
 
 /*
 Estilo para el boton de modo nocturno
 */
 
-.container-btn-mode{
-    position: absolute;
-    top:20px;
-    right: 30px;
-    cursor: pointer;
-    z-index: 2;
-    font-size:0;
-  }
-  .btn-mode{
-    display: inline-block;
-    width: 50px;
-    height: 30px;
-    border:2px solid black;
-    transition: background-color .5s;
-  }
-  .btn-mode i {
-    display: block;
-    font-size: 17px;
-    text-align: center;
-    line-height: 30px;
-  }
-  .btn-mode.sun{
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    border-right: 1px solid transparent;
-  }
-  .btn-mode.moon{
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-  }
-  .active{
-    background-color:black;
-    color:#ffcd5c !important;
-  }
+.container-btn-mode {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  cursor: pointer;
+  z-index: 2;
+  font-size: 0;
+}
+.btn-mode {
+  display: inline-block;
+  width: 50px;
+  height: 30px;
+  border: 2px solid black;
+  transition: background-color 0.5s;
+}
+.btn-mode i {
+  display: block;
+  font-size: 17px;
+  text-align: center;
+  line-height: 30px;
+}
+.btn-mode.sun {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-right: 1px solid transparent;
+}
+.btn-mode.moon {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.active {
+  background-color: black;
+  color: #ffcd5c !important;
+}
