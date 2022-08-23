@@ -62,7 +62,7 @@ Estilo para el boton de modo nocturno
   display: inline-block;
   width: 50px;
   height: 30px;
-  border: 2px solid black;
+  border: 2px solid white;
   transition: background-color 0.5s;
 }
 .btn-mode i {
@@ -81,6 +81,6 @@ Estilo para el boton de modo nocturno
   border-bottom-right-radius: 20px;
 }
 .active {
-  background-color: black;
+  background-color: white;
   color: #ffcd5c !important;
 }
