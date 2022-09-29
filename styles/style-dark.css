@@ -1,5 +1,7 @@
 body {
   text-align: center;
+  background-color: black;
+  color: white;
 }
 
 .paneles {
@@ -10,7 +12,7 @@ body {
 }
 
 .paneles > p {
-  border: 1px solid black;
+  border: 1px solid white;
   border-width: inherit;
   border-radius: 30px;
   padding: 60px;
@@ -60,7 +62,7 @@ Estilo para el boton de modo nocturno
   display: inline-block;
   width: 50px;
   height: 30px;
-  border: 2px solid black;
+  border: 2px solid white;
   transition: background-color 0.5s;
 }
 .btn-mode i {
@@ -79,7 +81,7 @@ Estilo para el boton de modo nocturno
   border-bottom-right-radius: 20px;
 }
 .active {
-  background-color: black;
+  background-color: white;
   color: #ffcd5c !important;
 }
 
@@ -88,19 +90,20 @@ Negrita y borde inferior para el texto explicativo
 */
 .tutorial {
   font-weight: bold;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid white;
 }
 
 p:first-child{
   font-weight: bold;
+  border-width: 300px;
 }
 
 .normal {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid white;
 }
 
 .tiempo {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid white;
 }
 
 

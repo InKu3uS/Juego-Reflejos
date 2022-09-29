@@ -1,4 +1,14 @@
 document.getElementById("comenzar").addEventListener("click", comenzarJuego);
+let dificultad = document.getElementById("comenzar").className;
+
+if(dificultad == "facil") {
+    dificultad = 2500;
+}else if(dificultad == "media"){
+    dificultad = 2000;
+}else{
+    dificultad = 1000;
+}
+
 /**
  * Lista de colores
  */
@@ -75,7 +85,7 @@ function cambiarPaneles() {
             }
         });
     });
-    setTimeout(cambiarPaneles, 2000);
+    setTimeout(cambiarPaneles, dificultad);
 }
 
 /**
@@ -92,7 +102,7 @@ document.getElementById('id-sun').onclick = function () {
  */
 document.getElementById('id-moon').onclick = function () {
     document.getElementById('id-sun').classList.remove('active');
-    document.getElementById('estilos').href = "styles/style 2.css";
+    document.getElementById('estilos').href = "styles/style-dark.css";
     this.classList.add('active')
 }
 

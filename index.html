@@ -4,46 +4,78 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link id= "estilos" rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <title>Juego de Reflejos</title>
+    <link id= "estilos" rel="stylesheet" href="styles/style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
   </head>
   <body>
-    <h1>Juego de Reflejos</h1>
+    <div class="navbar">
+        <div class="dropdown">
+          <button class="dropbtn">
+            Modo Normal
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="facil.html">Facil</a>
+            <a href="media.html">Media</a>
+            <a href="dificil.html">Dificil</a>
+          </div>
+        </div>
+        <a href="#home">Modo por Tiempo</a>
+        <a href="#news">Modo Incremental</a>
+    </div>
     <div class="container">
+      <!-- Navbar para seleccionar el tipo de juego -->
+      
+      <h1>Juego de Reflejos</h1>
       <div class="container-btn-mode">
         <div id="id-sun" class="btn-mode sun active">
-           <i class="fas fa-sun"></i>
+          <i class="fas fa-sun"></i>
         </div>
         <div id="id-moon" class="btn-mode moon">
-           <i class="fas fa-moon"></i>
+          <i class="fas fa-moon"></i>
         </div>
-     </div>
-      <div class="iniciar">
-        <h3>Introduce el tiempo de juego en minutos</h3>
-        <input type="number" name="tiempo" id="tiempo" min="1" />
-        <button id="comenzar">Comenzar</button>
-      </div>
-      <div class="tiempoRestante">
-        <p id="tiempoTotal"></p>
-        <p id="minutosRestante"></p>
-        <p id="segundosRestante"></p>
-      </div>
-      <div class="contador">
-        <p id="cuenta"></p>
-      </div>
-      <div class="paneles">
-        <p id="panel_1" hidden></p>
-        <p id="panel_2" hidden></p>
-        <p id="panel_3" hidden></p>
-        <p id="panel_4" hidden></p>
-        <p id="panel_5" hidden></p>
-        <p id="panel_6" hidden></p>
-      </div>
-      <div class="explicacion">
-        <p id="tutorial">Cuando el color del cuadro coincida con el color que aparece escrito en su interior haz click para sumar un punto. ¡Date prisa!</p>
       </div>
     </div>
-    <script src="js/reflejos.js"></script>
+    <div class="texto">
+      <div class="explicacion">
+        <div class="tutorial">
+          <p>
+            Este juego consiste en hacer click en el recuadro coloreado del
+            mismo color del que aparecerá escrito en su interior.
+          </p>
+          <p>
+            Dependiendo del tipo de dificultad o el modo de juego, el tiempo en
+            el que desaparecen los recuadros y aparecen otros nuevos variará.
+          </p>
+        </div>
+        <div class="normal">
+          <p>Modo Normal:</p>
+          <p>
+            <ul>
+                <li>Dificultad Fácil: Los recuadros se actualizan cada 3 segundos</li>
+                <li>Dificultad Media: Los recuadros se actualizan cada 2 segundos</li>
+                <li>Dificultad Dificil: Los recuadros se actualizan cada 1,5 segundos</li>
+            </ul>
+          </p>
+        </div>
+        <div class="tiempo">
+          <p>Modo por Tiempo:</p>
+          <p>
+            Consigue el máximo de aciertos antes de que se acabe el tiempo. Dificultad media.
+          </p>
+        </div>
+        <div class="incremental">
+          <p>Modo Incremental:</p>
+          <p>
+            Cada 10 aciertos se irá incrementando la dificultad. ¡Date prisa!
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="/js/index.js"></script>
   </body>
 </html>

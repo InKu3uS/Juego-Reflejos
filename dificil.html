@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link id= "estilos" rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <title>Modo Normal</title>
+  </head>
+  <body>
+    <h1>Modo Normal</h1>
+    <h2>Dificultad dificil</h2>
+    <div class="container">
+      <div class="container-btn-mode">
+        <div id="id-sun" class="btn-mode sun active">
+           <i class="fas fa-sun"></i>
+        </div>
+        <div id="id-moon" class="btn-mode moon">
+           <i class="fas fa-moon"></i>
+        </div>
+     </div>
+      <div class="iniciar">
+        <h3>Haz click para empezar a jugar</h3>
+        <button id="comenzar" class="dificil">Comenzar</button>
+      </div>
+      <div class="contador">
+        <p id="cuenta"></p>
+      </div>
+      <div class="paneles">
+        <p id="panel_1" hidden></p>
+        <p id="panel_2" hidden></p>
+        <p id="panel_3" hidden></p>
+        <p id="panel_4" hidden></p>
+        <p id="panel_5" hidden></p>
+        <p id="panel_6" hidden></p>
+      </div>
+      <div class="explicacion">
+        <p id="tutorial">Cuando el color del cuadro coincida con el color que aparece escrito en su interior haz click para sumar un punto. ¡Date prisa!</p>
+      </div>
+    </div>
+    <script src="js/reflejos.js"></script>
+  </body>
+</html>
