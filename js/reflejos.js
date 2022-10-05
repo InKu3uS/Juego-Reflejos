@@ -67,6 +67,9 @@ let puntos = 0;
 function cambiarPaneles() {
 
     paneles.forEach(panel => {
+
+        panel.removeEventListener("click", sumarPuntos());
+        
         let valorAleat = Math.floor(Math.random() * lista.length);
         let valor = lista[valorAleat];
         panel.textContent = valor;
@@ -75,17 +78,27 @@ function cambiarPaneles() {
         let clase = lista[claseAleat];
         panel.className = clase;
 
-        panel.addEventListener("click", function (e) {
-            let id = e.target.className;
-            let valor = e.target;
-            if (id === valor.textContent) {
-                puntos++;
-                console.log(puntos);
-                document.getElementsByClassName("contador")[0].innerHTML = "Vas " + puntos + " aciertos";
-            }
-        });
+        //El evento se activa solo
+        if(panel.textContent === panel.className){
+            panel.addEventListener("click");
+        }
+
+        // panel.addEventListener("click", function (e) {
+        //     let id = e.target.className;
+        //     let valor = e.target;
+        //     if (id === valor.textContent) {
+        //         puntos++;
+        //         console.log(puntos);
+        //         document.getElementsByClassName("contador")[0].innerHTML = "Vas " + puntos + " aciertos";
+        //     }
+        // });
     });
     setTimeout(cambiarPaneles, dificultad);
+}
+
+function sumarPuntos(){
+    puntos+=1;
+    document.getElementsByClassName("contador")[0].innerHTML = "Vas " + puntos + " aciertos";
 }
 
 /**
